@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://c5w7e6ltlqmmg"]
+
+[ext_resource type="Script" path="res://item_button.gd" id="1_31r8v"]
+
+[node name="ItemButton" type="Button"]
+custom_minimum_size = Vector2(100, 50)
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("1_31r8v")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer2D" parent="."]
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

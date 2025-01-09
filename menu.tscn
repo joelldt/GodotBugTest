@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://bmrn43lmxgwox"]
+
+[ext_resource type="PackedScene" uid="uid://c5w7e6ltlqmmg" path="res://ItemButton.tscn" id="1_db2ar"]
+[ext_resource type="Resource" uid="uid://dun4ieia07ta5" path="res://SWORD.tres" id="2_0a3ci"]
+[ext_resource type="Resource" uid="uid://b1mqsg78rhdte" path="res://AXE.tres" id="3_ownfn"]
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ItemButton" parent="HBoxContainer" instance=ExtResource("1_db2ar")]
+layout_mode = 2
+item = ExtResource("2_0a3ci")
+
+[node name="ItemButton2" parent="HBoxContainer" instance=ExtResource("1_db2ar")]
+layout_mode = 2
+item = ExtResource("3_ownfn")
